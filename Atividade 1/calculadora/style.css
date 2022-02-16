@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../imagens/backgroundMatematica.png");
+    background-repeat: repeat;
+}
+
+#divHeader {
+    height: 120px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #000000;
+    border: solid 1px #000000;
+}
+
+#estrutura {
+    width: 500px;
+    height: 305px;
+    border: solid 1px #000000;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+#divMenu {
+    width: 100px;
+    height: 78px;
+    background-image: url(../imagens/menu.png);
+    background-size: contain;
+    list-style: none;
+    color: #ffffff;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    margin-top: -95px;
+    position: absolute;
+    margin-left: 50px;
+}
+
+#divSubMenu {
+    width: 150px;
+    height: 100px;
+    /*margin-left: 150px;*/
+    margin-top: -28px;
+    /*display: none;*/
+    opacity: 0;
+    visibility: hidden;
+}
+
+#ulSubMenu {
+    justify-content: center;
+    border: solid 1px;
+    background-color: #000000;
+}
+
+.liSubMenu {
+    list-style: none;
+    box-sizing: border-box;
+    padding-top: 7px;
+    height: 30.5px;
+
+}
+
+.liSubMenu:hover {
+    background-color: gray;
+}
+
+#divMenu:hover>#divSubMenu {
+    /*display: block;*/
+    opacity: 1;
+    visibility: visible;
+    transition: 1.2s;
+    margin-left: 100px;
+}
+
+#alinhamentoCalculadora{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 750px;
+}
+
+#divtextoCalculadora {
+    height: 70px;
+    background-color: black;
+    color: floralwhite;
+    text-align: center;
+    font-size: 45px;
+    padding-top: 10px;
+}
+
+.caixatxt {
+    padding-top: 20px;
+    text-align: center;
+    height: 25px;
+    padding-bottom: 15px;
+}
+
+#parteinferior {
+    display: flex;
+    margin-top: 10px;
+}
+
+.bolinhas {
+    height: 20px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+#botao {
+    height: 35px;
+    width: 80px;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+#selecao {
+    flex-grow: 1;
+}
+
+#resultado {
+    width: 300px;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+}
+
+.msgErro {
+    color: red;
+    height: 27px;
+    width: 600px;
+    background-color: azure;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3px;
+    font-size: 20px;
+    display: block;
+}
+
+footer {
+    background-color: #000000;
+    padding: 20px;
+    height: 60px;
+    margin-top: 100px;
+}
+
+#voltarTopo {
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: solid 1px;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    right: 22px;
+    bottom: 14px;
+    line-height: 2.5;
+    padding-left: 2.5px;
+}
+
+#textoFooter {
+    font-size: 18px;
+    align-items: center;
+    text-align: center;
+    font-style: italic;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

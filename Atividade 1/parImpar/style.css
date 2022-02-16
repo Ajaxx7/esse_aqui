@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#divHeader{
+    height: 120px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #000000;
+    border: solid 1px #000000;
+}
+body{
+    height: 1000px;
+}
+#divEstrutura{
+    background-image: url("../imagens/backgroundMatematica.png");
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#divMenu{
+    width: 150px;
+    height: 78px;
+    background-image: url("../imagens/menu.png");
+    background-size: contain;
+    list-style: none;
+    color:#ffffff;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-repeat:no-repeat;
+    margin-top: -95px;
+    position: absolute;
+    margin-left: 50px;
+}
+#divSubMenu{
+    width: 150px;
+    height: 100px;
+    /*margin-left: 150px;*/
+    margin-top: -28px;
+    /*display: none;*/
+    opacity: 0;
+    visibility: hidden;
+}
+#ulSubMenu{
+    justify-content: center;
+    border: solid 1px;
+    background-color: #000000;
+}
+.liSubMenu{
+    list-style: none;
+    box-sizing: border-box;
+    padding-top: 7px;
+    height: 30.5px;
+    
+}
+.liSubMenu:hover{
+    background-color: gray;
+}
+#divMenu:hover >#divSubMenu{
+    /*display: block;*/
+    opacity: 1;
+    visibility: visible;
+    transition: 1.2s;
+    margin-left: 100px;
+}
+#tituloTabuada{
+    height: 80px;
+    width: inherit;
+    background-color: black;
+    font-size: 2em;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+#divForm{
+    min-height: 800px;
+    width: 1000px;
+    background-color:white;
+    border: solid 1px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.divLabel{
+    margin-top: 15px;
+}
+.labels{
+    font-size: 1.5em;
+    margin-left: 15px;
+}
+.selectLabel{
+    width: 100px;
+    height: 50px;
+    font-size: 1.2em;
+    text-align: center;
+}
+#botao{
+    height: 50px;
+    width: 100px;
+    font-size: 1.5em;
+    margin-left: 600px;
+    color: black;
+    background-color: tomato;
+}
+#divResultado{
+    min-height: 300px;
+    width: 500px;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    /* margin: 15px; */
+    border: solid 1px;
+    font-size: 1.4em;
+}
+#divPares{
+    background-color: brown;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    border: solid 1px black;
+}
+#divImpares{
+    background-color: cornsilk;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    border: solid 1px black;
+}
+.divNumeros{
+    display: flex;
+    flex-grow: 1;
+}
+.qntdNumeros{
+    background-color:palevioletred;
+}
+footer{
+    background-color: #000000;
+    padding: 20px; 
+    height: 30px;
+}
+#voltarTopo {
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: solid 1px;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    right: 22px;
+    bottom: 14px;
+    line-height: 2.5;
+    padding-left: 5px;
+  }
+#textoFooter{
+    font-size: 18px;
+    align-items: center;
+    text-align: center;
+    font-style: italic;
+    color: #ffffff;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.msgErro {
+    color: red;
+    height: 27px;
+    width: 600px;
+    background-color: azure;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3px;
+    font-size: 20px;
+    display: block;
+}
